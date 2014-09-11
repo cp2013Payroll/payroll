@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>440</x>
+      <y>168</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+emp_Id
+emp_Fname
+emp_Lname
+emp_Address</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>176</y>
+      <w>112</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>UnionAffiliation
+--
+affil_Id
+affil_UnionName
+affil_UnionDues
+emp_Id</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>512</x>
+      <y>384</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>HourlyClass
+--
+
+emp_id
+
+hourlyClass_Rate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>304</x>
+      <y>384</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>CommissionClass
+--
+
+emp_id
+commClass_Rate
+commClass_Salary</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>384</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>SalaryClass
+--
+
+emp_Id
+
+salClass_Salary</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>512</x>
+      <y>488</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>TimeSheet
+--
+timeSheet_Id
+emp_id
+timeSheet_date
+timeSheet_hours</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>304</x>
+      <y>488</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>SalesRecipt
+--
+salesRecipt_Id
+emp_id
+salesRecipt_commission</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>40</x>
+      <y>184</y>
+      <w>168</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>DirectPayment
+--
+dirPay_Id
+emp_Id
+dirPay_BankName
+dirPay_Bsb
+dirPay_AccountNum
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>40</x>
+      <y>40</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>MailPayment
+--
+mailPay_Id
+emp_Id
+mailPay_Address</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>40</x>
+      <y>112</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>HoldPayment
+--
+holdPay_Id
+emp_Id
+holdPay_dateStart
+holdPay_dateEnd</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>416</x>
+      <y>224</y>
+      <w>54</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Is</panel_attributes>
+    <additional_attributes>32;160;32;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>512</x>
+      <y>224</y>
+      <w>54</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Is</panel_attributes>
+    <additional_attributes>32;160;32;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>536</x>
+      <y>184</y>
+      <w>200</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..1
+Affiliated</panel_attributes>
+    <additional_attributes>24;40;184;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>536</x>
+      <y>224</y>
+      <w>256</w>
+      <h>176</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Is</panel_attributes>
+    <additional_attributes>240;160;240;56;64;56;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>224</x>
+      <y>184</y>
+      <w>232</w>
+      <h>376</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Earnt</panel_attributes>
+    <additional_attributes>80;360;24;360;24;176;176;176;176;24;216;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>536</x>
+      <y>216</y>
+      <w>204</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..1
+m2=0..1
+Worked</panel_attributes>
+    <additional_attributes>24;24;168;24;168;272;144;272</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>32</y>
+      <w>338</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Requires</panel_attributes>
+    <additional_attributes>24;40;296;40;296;136</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>104</y>
+      <w>298</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Requires</panel_attributes>
+    <additional_attributes>24;40;256;40;256;64</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>184</x>
+      <y>152</y>
+      <w>272</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..1
+m2=1..1
+Requires</panel_attributes>
+    <additional_attributes>24;40;256;40</additional_attributes>
+  </element>
+</diagram>

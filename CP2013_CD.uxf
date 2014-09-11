@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.5.1">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>56</x>
+      <y>8</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+PaymentMethod
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>536</x>
+      <y>128</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Affiliation
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>264</y>
+      <w>168</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>PaymentClassification
+--
+int 
+--
+calcHourlyEmpPay()
+calcSalaryEmpPay()
+calcCommEmpPay()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>568</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>TimeSheet
+--
+int emp_Id
+date date
+double hours</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>456</x>
+      <y>568</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>SalesRecipt
+--
+int emp_Id
+Date date
+double amount</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>272</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>UnionAffiliation
+--
+double dues</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>24</x>
+      <y>216</y>
+      <w>168</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>HoldPayment
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>24</x>
+      <y>144</y>
+      <w>168</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>DirectPayment
+--
+String bankName
+String BSB
+String accountName
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>24</x>
+      <y>272</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>MailPayment
+--
+String address</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>104</x>
+      <y>464</y>
+      <w>168</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>SalariedEmployee
+--
+double salary
+--
+super()
+addEmp(salary)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>464</y>
+      <w>168</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>addHourlyEmployee
+--
+double hourlyRate
+--
+super()
+addEmp(hourlyRate)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>456</x>
+      <y>464</y>
+      <w>168</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>AddCommissionEmployee
+--
+double salary
+double commissionRate
+--
+super()
+addEmp(salary, commissionRate)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>280</x>
+      <y>128</y>
+      <w>184</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Employee
+--
+int emp_Id
+String Fname
+String Lname
+String Address
+--
+addEmp(id,Fname,Lname,Address)
+deleteEmp(id)
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>152</x>
+      <y>408</y>
+      <w>416</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>24;56;24;24;400;24;400;56</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>344</y>
+      <w>40</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;88</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>408</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>24;56;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>504</y>
+      <w>40</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=0..*</panel_attributes>
+    <additional_attributes>24;64;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>520</x>
+      <y>512</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=0..*</panel_attributes>
+    <additional_attributes>24;56;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>216</y>
+      <w>40</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>24;48;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>360</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>ServiceCharges
+--
+int memberId
+double amount</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>776</x>
+      <y>304</y>
+      <w>40</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m2=0..*</panel_attributes>
+    <additional_attributes>24;56;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>440</x>
+      <y>136</y>
+      <w>112</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>96;24;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>720</x>
+      <y>192</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>NoAffiliation
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>592</x>
+      <y>160</y>
+      <w>144</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;144;128;144</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>592</x>
+      <y>192</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>24;24;128;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>288</x>
+      <y>8</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+PaymentSchedule
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>352</x>
+      <y>40</y>
+      <w>40</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>24;24;24;88</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>536</x>
+      <y>16</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Weekly</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>536</x>
+      <y>48</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>BiWeekly</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>536</x>
+      <y>80</y>
+      <w>80</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>Monthly</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>432</x>
+      <y>8</y>
+      <w>88</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>24;24;72;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>0</y>
+      <w>72</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>56;96;24;96;24;24;56;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>40</y>
+      <w>72</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>24;24;56;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Text</type>
+    <coordinates>
+      <x>376</x>
+      <y>88</y>
+      <w>72</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>its Schedule</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
